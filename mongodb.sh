@@ -1,4 +1,4 @@
-cp mongodb.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/roboshop-shell/mongodb.repo /etc/yum.repos.d/mongo.repo
 
 yum install mongodb-org -y
 
