@@ -1,4 +1,4 @@
-cp mongodp.repo /etc/yum.repos.d/mongo.repo
+cp mongodb.repo /etc/yum.repos.d/mongo.repo
 
 yum install mongodb-org -y
 
