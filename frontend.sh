@@ -7,6 +7,6 @@ unzip /tmp/frontend.zip
 
 ## we need to copy config file
 
-cp /home/centos/roboshop-shell/roboshop.config /etc/nginx/default.d/roboshop.conf
+cp roboshop.config /etc/nginx/default.d/roboshop.conf
 systemctl enable nginx
 systemctl restart nginx
