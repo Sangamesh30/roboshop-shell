@@ -19,7 +19,7 @@ cp /home/centos/roboshop-shell/user.service /etc/systemd/system/user.service
 systemctl daemon-reload
 
 systemctl enable user
-systemctl restart user
+systemctl start user
 
 cp /home/centos/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 
