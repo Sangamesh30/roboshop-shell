@@ -1,7 +1,7 @@
-cp /home/centos/roboshop-shell/mongodb.repo /etc/yum.repos.d/mongodb.repo
+cp /home/centos/roboshop-shell/mongod.repo /etc/yum.repos.d/mongod.repo
 yum install mongodb-org -y
 
-sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongodb.conf
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
 
 systemctl enable mongod
 systemctl restart mongod
