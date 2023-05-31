@@ -20,7 +20,7 @@ systemctl daemon-reload
 systemctl enable user
 systemctl start user
 
-cp /home/centos/roboshop-shell/mongodb.repo /etc/yum.repos.d/mongodb.repo
+cp /home/centos/roboshop-shell/mongod.repo /etc/yum.repos.d/mongod.repo
 
 yum install mongodb-org-shell -y
 
