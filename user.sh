@@ -4,6 +4,7 @@ yum install nodejs -y
 
 useradd roboshop
 
+rm -rf /app
 mkdir /app
 
 curl -L -o /tmp/user.zip https://roboshop-artifacts.s3.amazonaws.com/user.zip
@@ -19,7 +20,7 @@ systemctl daemon-reload
 systemctl enable user
 systemctl start user
 
-cp /home/centos/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/roboshop-shell/mongodb.repo /etc/yum.repos.d/mongodb.repo
 
 yum install mongodb-org-shell -y
 
