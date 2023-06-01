@@ -12,7 +12,7 @@
 
   mysql -h mysql-dev.awsdevops73.store -uroot -pRoboShop@1 < /app/schema/shipping.sql
 
-  cp /home/centos/roboshop-shell/shipping.service  /etc/systemd/system/shipping.service
+  cp /home/centos/roboshop-shell/shipping.service /etc/systemd/system/shipping.service
 
 
   systemctl daemon-reload
